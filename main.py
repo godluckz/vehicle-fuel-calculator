@@ -17,7 +17,7 @@ def main():
     print("!!Welcome to Trip-Fuel-Cost calculator!!")
     print("****************************************")
     w_distance          = int(input(f"What is the total trip distance (Km): "))
-    w_litters_per_100km = int(input(f"What is vehicles fuel consumption (L/100Km): "))
+    w_litters_per_100km = int(input(f"What is vehicle's fuel consumption (L/100Km): "))
     w_fuel_price        = int(input(f"What is the current fuel price (per litter): "))
     
 

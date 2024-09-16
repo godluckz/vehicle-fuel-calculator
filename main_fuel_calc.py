@@ -1,3 +1,4 @@
+#!/usr/bin/python 
 
 def format_currency(p_amount):
     return 'R{:,.2f}'.format(p_amount)
@@ -13,9 +14,6 @@ def calculate_trip_cost(p_distance: int,
 
 
 def main():
-    print("****************************************")
-    print("!!Welcome to Trip-Fuel-Cost calculator!!")
-    print("****************************************")
     w_distance          = int(input(f"What is the total trip distance (Km): "))
     w_litters_per_100km = int(input(f"What is vehicle's fuel consumption (L/100Km): "))
     w_fuel_price        = int(input(f"What is the current fuel price (per litter): "))
@@ -26,12 +24,18 @@ def main():
                                                         w_fuel_price_per_litter = w_fuel_price)
     
     print(f"\n\nFor the given vehicle with a consumption of {w_litters_per_100km} Litters/100Km, Trip of {w_distance}Km will require at least:\nFuel: {w_total_litters} Litters\nCost: {format_currency(w_total_cost)} (in Fuel currency, e.g Rands).\n")
-    print("-----------------------------------------")
-    print("-----------------------------------------")    
-    print("Have a safe Trip 🛣️🛻💃📷\n\n")
 
 
 
 if __name__ == "__main__":
-    print("in main")
+    print("****************************************")
+    print("!!Welcome to Trip-Fuel-Cost calculator!!")
+    print("****************************************")    
+    print("\n")
+    
     main()
+    
+    print("-----------------------------------------")
+    print("-----------------------------------------")    
+    print("Have a safe Trip 🛣️🛻💃📷\n\n")
+    input('Press RETURN to finish')

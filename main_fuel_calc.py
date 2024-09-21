@@ -1,4 +1,3 @@
-#!/usr/bin/python 
 
 def format_currency(p_amount):
     return 'R{:,.2f}'.format(p_amount)
@@ -38,4 +37,4 @@ if __name__ == "__main__":
     print("-----------------------------------------")
     print("-----------------------------------------")    
     print("Have a safe Trip 🛣️🛻💃📷\n\n")
-    input('Press RETURN to finish')
+    input('Press ENTER to finish')
